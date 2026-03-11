@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Blip AI Helper",
+  "version": "1.0",
+  "description": "Sugestões inteligentes para respostas no Blip Desk.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://*.blip.ai/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.blip.ai/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
